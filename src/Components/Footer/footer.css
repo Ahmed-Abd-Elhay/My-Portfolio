@@ -1,0 +1,142 @@
+.footer {
+    background-color: #192247;
+    padding: 5px 0;
+}
+
+.footer .container {
+    width: 85%;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.footer .container .links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer .container .links li {
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.footer .container .links li:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+.footer .container .copyrite {
+    color: white;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.footer .container .copyrite span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #7fceff;
+}
+
+hr {
+    display: none;
+}
+
+/* Start Responsive */
+
+@media (max-width: 900px) {
+    .footer .container {
+        width: 90%;
+    }
+
+    .footer .container .links {
+        gap: 5px;
+    }
+
+    .footer .container .links li {
+        font-size: 16px;
+    }
+
+    .footer .container .copyrite {
+        font-size: 14px;
+    }
+
+    .footer .container .copyrite span {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 700px) {
+    .footer .container {
+        width: 85%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer .container .links li {
+        font-size: 17px;
+    }
+
+    hr {
+        display: block;
+        width: 80%;
+        height: 3px;
+        background-color: #cdcdcd;
+        border-radius: 12px;
+    }
+
+    .footer .container .copyrite {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .footer .container .links li {
+        font-size: 14px;
+        padding: 7px;
+    }
+
+    .footer .container .copyrite {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+    .footer .container .copyrite span {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 300px) {
+    .footer .container .links {
+        gap: 0;
+    }
+
+    .footer .container .links li {
+        font-size: 13px;
+        padding: 5px;
+    }
+
+    .footer .container .copyrite {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .footer .container .copyrite span {
+        font-size: 13px;
+    }
+}
+
+/* End Responsive */

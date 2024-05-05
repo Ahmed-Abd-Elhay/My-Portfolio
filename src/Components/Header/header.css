@@ -1,0 +1,377 @@
+.header {
+    width: 100%;
+    background-color: #eeeeea;
+}
+
+.header .container {
+    width: 85%;
+    padding: 18px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.header .logo {
+    font-size: 34px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s;
+    color: #192247;
+}
+
+.header .logo .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .logo:hover {
+    transform: scale(1.05);
+}
+
+.header .links {
+    display: flex;
+    gap: 15px;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.header .links .link {
+    text-decoration: none;
+}
+
+.header .links li {
+    color: #0d0729;
+    padding: 10px;
+    transition: .3s;
+    cursor: pointer;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.header .links li:hover {
+    transform: scale(1.05);
+    color: black;
+}
+
+.header .contact-me {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header .contact-me button {
+    border: none;
+    outline: none;
+    border-radius: 80px;
+    font-size: 19px;
+    font-weight: 500;
+    color: white;
+    background: linear-gradient(45deg, #ff1e14, #ff5904);
+    cursor: pointer;
+    transition: .3s;
+    width: 140px;
+    height: 45px;
+}
+
+.header .contact-me button:hover {
+    transform: scale(1.05);
+}
+
+
+/* Start Burger Icon */
+
+.header .burger-icon {
+    display: none;
+    position: relative;
+}
+
+.header .burger-icon .icon {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.header .burger-icon .icon div {
+    width: 100%;
+    background-color: rgb(14, 14, 14);
+    height: 6px;
+    border-radius: 54px;
+}
+
+.header .burger-icon .close .first {
+    transform: rotate(45deg) translate(3px, 15px);
+    transition: ease-in-out .3s;
+    -webkit-transform: rotate(45deg) translate(3px, 15px);
+    -moz-transform: rotate(45deg) translate(3px, 15px);
+    -ms-transform: rotate(45deg) translate(3px, 15px);
+    -o-transform: rotate(45deg) translate(3px, 15px);
+}
+
+
+.header .burger-icon .close .second {
+    display: none;
+}
+
+.header .burger-icon .close .last {
+    transform: rotate(135deg) translate(1px, 12px);
+    transition: ease-out .3s;
+}
+
+.header .burger-icon .icon:hover {
+    transform: scale(1.06);
+}
+
+.header .burger-icon {
+    display: none;
+}
+
+.header .overflow {
+    position: absolute;
+    top: -600px;
+    left: -143px;
+    background: rgb(34 38 41);
+    width: 200px;
+    height: 350px;
+    border-radius: 10PX;
+    transition: .4s;
+    z-index: 99;
+}
+
+.header .overflow.checked {
+    top: 67px;
+}
+
+.header .overflow .burger-links {
+    display: none;
+}
+
+.header .checked .burger-links {
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 22px;
+}
+
+.header .checked .burger-links .link li {
+    color: #b5b5b5;
+    padding: 18px 0;
+    transition: .3s;
+    cursor: pointer;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .checked .burger-links .link:not(:last-child)::after {
+    content: "";
+    width: 95%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.701);
+    transform: translate(-50%, -50%);
+    border-radius: 33px;
+}
+
+.header .checked .burger-links li:hover {
+    transform: scale(1.05);
+    color: white;
+}
+
+.header .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.header .contact button {
+    border: none;
+    outline: none;
+    border-radius: 80px;
+    font-size: 19px;
+    font-weight: 500;
+    color: white;
+    background: linear-gradient(45deg, #ff1e14, #ff5904);
+    cursor: pointer;
+    transition: .3s;
+    width: 140px;
+    height: 45px;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.header .contact button:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+/* End Burger Icon */
+
+.link {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    height: 100%;
+}
+
+/* Start Responsive Header */
+
+@media (max-width: 1000px) {
+
+    .header .links {
+        display: none;
+    }
+
+    .header .burger-icon {
+        display: block;
+    }
+
+    .header .contact-me {
+        display: none;
+    }
+
+}
+
+@media (max-width: 720px) {
+
+    .header .container {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header .links {
+        display: none;
+    }
+
+    .header .logo {
+        font-size: 30px;
+    }
+
+    .header .overflow {
+        position: fixed;
+        top: 80px;
+        left: 900px;
+        background: rgb(43, 42, 42);
+        width: 100%;
+        height: 93vh;
+        border-radius: 10PX;
+        transition: .4s;
+    }
+
+    .header .overflow.checked {
+        left: 0;
+    }
+
+    .header .checked .burger-links {
+        justify-content: unset;
+        font-size: 25px;
+    }
+
+    .header .checked .burger-links .link li {
+        color: #b5b5b5;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header .checked .burger-links .link li:hover {
+        transform: scale(1.05);
+        color: white;
+    }
+
+    .header .contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 50px 0;
+    }
+
+}
+
+
+@media (max-width: 420px) {
+    .header .links {
+        display: none;
+    }
+
+    .header .burger-icon {
+        display: block;
+    }
+
+    .header .logo {
+        font-size: 22px;
+    }
+
+    .header .contact-me {
+        gap: 10px;
+    }
+
+    .header .contact-me button {
+        font-size: 13px;
+        width: 60px;
+        height: 25px;
+    }
+
+    .header .burger-icon .icon {
+        width: 28px;
+        height: 21px;
+    }
+
+    .header .burger-icon .icon div {
+        height: 3px;
+    }
+
+    .header .burger-icon .close .first {
+        transform: rotate(45deg) translate(2px, 9px);
+    }
+
+    .header .burger-icon .close .last {
+        transform: rotate(135deg) translate(1px, 5px);
+    }
+
+    .header .overflow {
+        position: fixed;
+        left: 600px;
+        background: rgb(43, 42, 42);
+        width: 100%;
+        height: 93vh;
+        border-radius: 10PX;
+        transition: .4s;
+    }
+
+    .header .overflow.checked {
+        left: 0;
+    }
+
+}
+
+/* End Responsive Header */
