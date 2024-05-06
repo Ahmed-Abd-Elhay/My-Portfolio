@@ -4,7 +4,7 @@ import github_logo from "../../assets/github-logo.png";
 import send_img from "../../assets/send-icon-removebg-preview.png";
 import download_img from "../../assets/pngtree-white-download-icon-png-image_4560347-removebg-preview.png";
 import profile_image from "../../assets/profile-imag.png";
-import resume_png from "../../assets/Ahmed El Sayed Abd Elhay (1) (1).pdf";
+import resume_png from "../../assets/Ahmed El Sayed Abd Elhay.pdf";
 import arrow_png from "../../assets/arrow-red.png";
 import { Link } from "react-scroll";
 
