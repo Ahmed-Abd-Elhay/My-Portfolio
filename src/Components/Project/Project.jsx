@@ -46,7 +46,7 @@ function Project() {
                             <div className="description">
                                 <h4>E-Commerce</h4>
                                 <p>
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora esse ab deserunt dolore
+                                    The ultimate destination for all things tech!, from headphones and laptops  and more...
                                 </p>
                             </div>
                             <div className="image">
@@ -66,7 +66,7 @@ function Project() {
                             <div className="description">
                                 <h4>My Food</h4>
                                 <p>
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora esse ab deserunt dolore
+                                    Indulge in the rich flavors of Egypt from the comfort of your home with Online Restaurant.
                                 </p>
                             </div>
                             <div className="image">
@@ -85,9 +85,9 @@ function Project() {
                         <div className="row">
                             <div className="icon">3</div>
                             <div className="description">
-                                <h4>Journy Life</h4>
+                                <h4>Life Journey</h4>
                                 <p>
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora esse ab deserunt dolore
+                                    The journey that reviews everything you have experienced , like books you have read, projects you have worked on, and more.
                                 </p>
                             </div>
                             <div className="image">
@@ -108,7 +108,7 @@ function Project() {
                             <div className="description">
                                 <h4>We Kasper</h4>
                                 <p>
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora esse ab deserunt dolore
+                                    We Are Kasper We Make different and modern types of Art, Visit us if you are an art lover.
                                 </p>
                             </div>
                             <div className="image">

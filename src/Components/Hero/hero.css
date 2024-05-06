@@ -186,6 +186,10 @@
 
 @media (max-width: 1250px) {
 
+    .hero {
+        height: calc(100vh - 84px);
+    }
+
     .hero .container {
         flex-direction: column-reverse;
         justify-content: center;
@@ -205,6 +209,10 @@
 }
 
 @media (max-width: 700px) {
+
+    .hero {
+        height: calc(100vh - 77px);
+    }
 
     .hero .container {
         flex-direction: column-reverse;
@@ -268,8 +276,11 @@
 
 }
 
-
 @media (max-width: 450px) {
+
+    .hero {
+        height: calc(100vh - 66px);
+    }
 
     .hero .container {
         gap: 30px;
@@ -323,7 +334,6 @@
 
 
 @media (max-width: 400px) {
-
 
     .hero .container .info .buttons .contact-me {
         font-size: 12px;
