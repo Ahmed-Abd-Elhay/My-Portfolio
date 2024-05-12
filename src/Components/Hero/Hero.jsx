@@ -23,7 +23,7 @@ const Hero = () => {
 
                     <div className="buttons">
                         <Link
-                            to="contact"
+                            to="contact-us"
                             spy={true}
                             smooth={true}
                             offset={50}
